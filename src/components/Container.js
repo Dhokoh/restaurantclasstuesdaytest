@@ -1,4 +1,15 @@
+import { Outlet, Link } from "react-router-dom";
+import Header from './Header'
+import Body from "./Body";
+import Footer from "./Footer";
+
 const Container = () => {
-    return <h1>Container</h1>
+    return (
+        <>
+            <Header />
+                <Outlet />  
+            <Footer />
+        </>
+    )
 }
 export default Container;
